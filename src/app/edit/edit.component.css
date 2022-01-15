@@ -1,0 +1,28 @@
+.Main{
+  width: 250px;
+  height: 250px;
+  border: gray 1px solid;
+  border-radius: 5px;
+}
+.Main .Container{
+  width: 80%;
+  height: 80%;
+  margin-left: 15px;
+}
+.Title .Title-1{
+  color: gray;
+}
+.Title .Out{
+  margin-left: 70px;
+}
+hr{
+  width: 250px;
+  margin-left: -15px;
+}
+.Main .Container .Submit{
+  margin-top: 5px;
+  border-radius: 5px;
+}
+label{
+  color: gray;
+}

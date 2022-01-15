@@ -1,0 +1,39 @@
+<div class="Main">
+  <div class="Container">
+    <div class="Title">
+      <span class="Title-1">Edit Product</span><span><button class="Out" type="button">x</button></span>
+    </div>
+    <hr>
+    <form (ngSubmit)="onSubmit()" #f = "ngForm">
+      <div class="Form-group">
+        <label class="Label">Product Name</label>
+        <div class="Input">
+          <input
+            type="text"
+            id="productname"
+            class="form-control"
+            ngModel
+            name="productname"
+            required
+          />
+        </div>
+      </div>
+      <div class="Form-group">
+        <label class="Label">Product Price</label>
+        <div class="Input">
+          <input
+            type="text"
+            id="productprice"
+            class="form-control"
+            ngModel
+            name="productprice"
+            required
+          />
+        </div>
+      </div>
+      <div class="Form-group">
+        <button class="Submit" [disabled]="!f.valid" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
